@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Parvathy Portfolio</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -14,25 +15,29 @@
     }
 
     body{
-      background:#0f172a;
+      background:#0f0a14;
       color:white;
     }
 
     /* Navigation */
+
     nav{
       display:flex;
       justify-content:space-between;
       align-items:center;
       padding:20px 60px;
-      background:#111827;
+      background:#1b1025;
       position:sticky;
       top:0;
+      z-index:1000;
+      box-shadow:0 4px 15px rgba(255, 105, 180, 0.1);
     }
 
     .logo{
-      font-size:24px;
+      font-size:28px;
       font-weight:bold;
-      color:#38bdf8;
+      color:#ff69b4;
+      letter-spacing:1px;
     }
 
     .nav-links{
@@ -44,14 +49,16 @@
     .nav-links a{
       text-decoration:none;
       color:white;
+      font-size:17px;
       transition:0.3s;
     }
 
     .nav-links a:hover{
-      color:#38bdf8;
+      color:#ff69b4;
     }
 
     /* Hero Section */
+
     .hero{
       height:90vh;
       display:flex;
@@ -59,89 +66,149 @@
       align-items:center;
       text-align:center;
       padding:20px;
+      background:linear-gradient(
+        to right,
+        #140d1c,
+        #1e112b
+      );
+    }
+
+    .hero-content{
+      max-width:700px;
     }
 
     .hero-content h1{
-      font-size:60px;
-      margin-bottom:10px;
+      font-size:68px;
+      margin-bottom:15px;
+      color:#ffffff;
     }
 
     .hero-content h2{
-      font-size:32px;
-      color:#38bdf8;
-      margin-bottom:15px;
+      font-size:34px;
+      color:#ff69b4;
+      margin-bottom:20px;
+      font-weight:600;
     }
 
     .hero-content p{
       font-size:20px;
-      color:#cbd5e1;
-      margin-bottom:25px;
+      color:#d8bfd8;
+      line-height:1.8;
+      margin-bottom:35px;
     }
+
+    /* Button */
 
     .btn{
       display:inline-block;
-      padding:12px 24px;
-      background:#38bdf8;
-      color:black;
+      padding:14px 32px;
+      background:#ff69b4;
+      color:white;
       text-decoration:none;
-      border-radius:8px;
+      border-radius:10px;
+      font-size:17px;
       font-weight:bold;
       transition:0.3s;
+      box-shadow:0 4px 15px rgba(255, 105, 180, 0.3);
     }
 
     .btn:hover{
-      background:white;
+      background:#ff1493;
+      transform:translateY(-3px);
     }
 
+    /* Mobile Responsive */
+
     @media(max-width:768px){
+
       nav{
         flex-direction:column;
         gap:15px;
+        padding:20px;
+      }
+
+      .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
       }
 
       .hero-content h1{
-        font-size:42px;
+        font-size:46px;
       }
 
       .hero-content h2{
-        font-size:24px;
+        font-size:26px;
+      }
+
+      .hero-content p{
+        font-size:17px;
       }
     }
+
   </style>
 </head>
 
 <body>
 
   <!-- Navigation -->
+
   <nav>
+
     <div class="logo">Parvathy</div>
 
-   <ul class="nav-links">
+    <ul class="nav-links">
+
       <li><a href="index.html">Home</a></li>
+
       <li><a href="about.html">About</a></li>
+
       <li><a href="skills.html">Skills</a></li>
+
       <li><a href="project.html">Projects</a></li>
-      <li><a href="certification.html">Certificaton</a></li>
+
+      <li><a href="certification.html">Certification</a></li>
+
       <li><a href="achievements.html">Achievements</a></li>
+
       <li><a href="blog.html">Blog</a></li>
+
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://github.com/p456arvathy" target="_blank">GitHub</a></li>
+
+      <li>
+        <a href="https://github.com/p456arvathy" target="_blank">
+          GitHub
+        </a>
+      </li>
+
     </ul>
+
   </nav>
 
-  <!-- Home Page -->
+  <!-- Hero Section -->
+
   <section class="hero">
+
     <div class="hero-content">
+
       <h1>Parvathy</h1>
-      <h2>Frontend Developer</h2>
+
+      <h2>Frontend Developer & Data Science Learner</h2>
+
       <p>
-        Building modern, responsive and creative websites.
+        Passionate about building modern websites, creating clean user experiences,
+        and exploring the world of Data Science and Machine Learning.
       </p>
 
-      <a href="https://github.com/p456arvathy" class="btn" target="_blank">
+      <a href="https://github.com/p456arvathy"
+         class="btn"
+         target="_blank">
+
         View GitHub
+
       </a>
+
     </div>
+
   </section>
 
 </body>
